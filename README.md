@@ -38,3 +38,6 @@ script that lists all files (even ones with names beginning with a period charac
 
 ## **12-file_type**
 script that prints the type of the file
+
+## **13-symbolic_link**
+Create a symbolic link to /bin/ls, named __ls__.
