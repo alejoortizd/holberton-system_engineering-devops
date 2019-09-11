@@ -51,5 +51,8 @@ script that moves all files beginning with an uppercase letter to the directory 
 ## **16-clean_emacs**
 script that deletes all files in the current working directory that end with the character ~.
 
-## *17-tree**
+## **17-tree**
 script that creates the directories welcome/to/holberto
+
+## **18-commas**
+command that lists all the files and directories of the current directory, separated by commas (,).
