@@ -48,3 +48,6 @@ script that changes the group owner to holberton for the file hello
 
 ### 14-change_owner_and_group
 script that changes the owner to betty and the group owner to holberton for all the files and directories in the working directory.
+
+### 15-symbolic_link_permissions
+script that changes the owner and the group owner of the file _hello to betty and holberton respectively.
