@@ -2,19 +2,19 @@
 # This script is displaying "Holberton School" 9 times and hi at the position 9
 
 
-    if [ -e "holbertonschool" ]
+if [ -e "holbertonschool" ]
+then
+    echo "holbertonschool file exits"
+    if [ -s "holbertonschool" ]
     then
-	echo "holbertonschool file exits"
-	if [ -s "holbertonschool" ]
-	then
-	    echo "holbertonschool file is not empty"
-	else
-	    echo "holbertonschool file is empty"
-	fi
-	if [ -f "holbertonschool" ]
-	then
-	    echo "holbertonschool is a regular file"
-	fi
+	echo "holbertonschool file is not empty"
     else
-	echo "holbertonschool file does not exist"
+	echo "holbertonschool file is empty"
     fi
+    if [ -f "holbertonschool" ]
+    then
+	echo "holbertonschool is a regular file"
+    fi
+else
+    echo "holbertonschool file does not exist"
+fi
