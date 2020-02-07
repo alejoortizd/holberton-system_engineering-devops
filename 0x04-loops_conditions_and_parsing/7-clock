@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 9 times and hi at the position 9
+
+
+i=0
+while [ $i -le 12 ]
+do
+    j=0
+    echo "Hour: $i"
+    while [ $j -le 58 ]
+    do
+      (( j++ ))
+	echo $j
+    done
+    (( i++ ))
+done
