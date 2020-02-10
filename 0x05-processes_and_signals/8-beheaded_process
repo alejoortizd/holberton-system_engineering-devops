@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script is displaying a list of currently running processes
+
+
+pkill -f "7-highlander" --signal SIGKILL
