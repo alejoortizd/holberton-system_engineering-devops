@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# a Bash script that uses ssh to connect to your server using the private key ~/.ssh/holberton with the user ubuntu
+# Only use ssh single-character flags
+# You cannot use -l
+# You do not need to handle the case of a private key protected by a passphrase
+
+ssh -i ~/.ssh/holberton ubuntu@35.231.170.166
