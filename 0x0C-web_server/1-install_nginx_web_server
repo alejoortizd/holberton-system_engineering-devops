@@ -3,7 +3,6 @@
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo ufw allow 'Nginx HTTP'
 sudo apt-get -y install nginx
 sudo service nginx start
 echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
