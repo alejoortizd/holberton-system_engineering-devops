@@ -2,8 +2,10 @@
 # A Bash script that configures a new Ubuntu machine to respect the requirements:
 
 sudo apt-get -y update
-sudo apt-get -y install nginx
+sudo apt-get -y upgrade
 sudo ufw allow 'Nginx HTTP'
-sudo chmod '0777' /var/www/html/index.nginx-debian.html
-echo "Holberton School" | sudo tee /usr/share/nginx/html/index.nginx-debian.html
-sudo /etc/init.d/nginx start
+sudo apt-get -y install nginx
+sudo chgrp -R ubuntu /usr/share/nginx/html
+sudo chmod -R g+w /usr/share/nginx/html
+echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
+sudo service nginx start
