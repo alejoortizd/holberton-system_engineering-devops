@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     users = {}
     usernames = {}
-    for user in users:
+    for user in urlUser:
         idU = user.get('id')
         users[idU] = []
         usernames[idU] = user.get('username')
