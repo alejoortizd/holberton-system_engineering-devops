@@ -16,7 +16,7 @@ if __name__ == '__main__':
         pendingDict = {}
         pendingDict['pending'] = pending.get('title')
         pendingDict['completed'] = pending.get('completed')
-        pendingDict['username'] = pending.get('username')
+        pendingDict['username'] = urlUser.get('username')
         pendingList.append(pendingDict)
     jObject = {}
     jObject[idU] = pendingList
