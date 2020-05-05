@@ -14,7 +14,7 @@ if __name__ == '__main__':
     pendingList = []
     for pending in listTodo:
         pendingDict = {}
-        pendingDict['pending'] = pending.get('title')
+        pendingDict['task'] = pending.get('title')
         pendingDict['completed'] = pending.get('completed')
         pendingDict['username'] = urlUser.get('username')
         pendingList.append(pendingDict)
