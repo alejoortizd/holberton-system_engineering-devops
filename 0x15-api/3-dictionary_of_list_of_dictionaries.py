@@ -19,9 +19,9 @@ if __name__ == '__main__':
     for pending in listTodo:
         pendings = {}
         idU = pending.get('userId')
+        pendings['username'] = usernames.get(idU)
         pendings['task'] = pending.get('title')
         pendings['completed'] = pending.get('completed')
-        pendings['username'] = usernames.get('idU')
         users.get(idU).append(pendings)
     with open('todo_all_employees.json', 'w') as jsonfile:
         json.dump(users, jsonfile)
