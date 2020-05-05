@@ -8,7 +8,8 @@ if __name__ == '__main__':
     urlUser = requests.get(
         'https://jsonplaceholder.typicode.com/users/{}'.format(idU)).json()
     listTodo = requests.get(
-        'https://jsonplaceholder.typicode.com/users/{}/todos'.format(idU)).json()
+        'https://jsonplaceholder.typicode.com/users/{}/todos'
+        .format(idU)).json()
     pendingList = []
     for pending in listTodo:
         if pending.get('completed') is True:
