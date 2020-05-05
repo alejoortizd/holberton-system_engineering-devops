@@ -16,5 +16,5 @@ if __name__ == '__main__':
         for pending in listTodo:
             file.writerow([int(idU),
                            urlUser.get('username'),
-                           urlUser.get('completed'),
-                           urlUser.get('title')])
+                           pending.get('completed'),
+                           pending.get('title')])
