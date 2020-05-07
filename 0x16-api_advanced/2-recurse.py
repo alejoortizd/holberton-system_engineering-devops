@@ -22,8 +22,8 @@ def recurse(subreddit, hot_list=[], after=None):
     if str(req) != '<Response [200]>':
         return None
     else:
-        reqjson = req.json()
-        posts = reqjson.get('data', {}).get('children', None)
+        rj = req.json()
+        posts = rj.get('data', {}).get('children', None)
         for post in posts:
             hot_list.append(post.get('data', {}).get('title', None))
-        return hot_list + recurse(subreddit, [], reqjson.get('data').get('after'))
+        return hot_list + recurse(subreddit, [], rj.get('data').get('after'))
