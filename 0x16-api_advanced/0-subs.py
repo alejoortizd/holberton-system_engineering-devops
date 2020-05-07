@@ -14,7 +14,7 @@ def number_of_subscribers(subreddit):
                "Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
                 AppleWebKit/537.36 (KHTML, like Gecko)\
                 Chrome/70.0.3538.77 Safari/537.36"}
-    req = requests.get('https://www.reddit.com/r/{}/about.json'.format(subreddit),
-                       headers=headers).json()
+    url = 'https://www.reddit.com/r/{}/about.json'
+    req = requests.get(url.format(subreddit), headers=headers).json()
     subs = req.get("data", {}).get("subscribers", 0)
     return subs
